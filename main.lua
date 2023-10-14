@@ -32,7 +32,7 @@ rape:NewButton("RESET", "Reset your character to stop fucking her", function()
     player.Character.Humanoid.Health = 0
 end)
 local movehub = Window:NewTab("Movement")
-local movement = movehub:NewSection("")
+local movement = movehub:NewSection()
 movement:NewLabel("Speed")
 movement:NewSlider("Slider", "How fast you move", 100, 18, function(s)
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s

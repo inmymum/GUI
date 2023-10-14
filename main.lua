@@ -9,10 +9,11 @@ function getPlayerNames() -- Get list of players for selection dropdown
     end
     return playerNames
 end
-local movehub = Window:NewTab("Movement")
-local movement = movehub:NewSection("")
+
 local rapetab = Window:NewTab("Rape")
 local rape = rapetab:NewSection("Rape The hoes")
+local movehub = Window:NewTab("Movement")
+local movement = movehub:NewSection("")
 local dropdown = rape:NewDropdown("Rapist","", getPlayerNames(), function(x)
     rapist = x
 end)

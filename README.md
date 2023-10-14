@@ -42,7 +42,7 @@ movement:NewButton("Default", "Set jump height to default", function()
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 18
 end)
 movement:NewLabel("Jump height")
-movement:NewSlider("Slider", "How high you jump obviously", 350, 50, function(s)
+movement:NewSlider("Slider", "How high you jump obviously", 350, 10, function(s)
     game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
 end)
 movement:NewButton("Default", "Set jump height to default", function()

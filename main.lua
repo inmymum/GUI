@@ -12,8 +12,6 @@ end
 
 local rapetab = Window:NewTab("Rape")
 local rape = rapetab:NewSection("Rape The hoes")
-local movehub = Window:NewTab("Movement")
-local movement = movehub:NewSection("")
 local dropdown = rape:NewDropdown("Rapist","", getPlayerNames(), function(x)
     rapist = x
 end)
@@ -33,6 +31,8 @@ end)
 rape:NewButton("RESET", "Reset your character to stop fucking her", function()
     player.Character.Humanoid.Health = 0
 end)
+local movehub = Window:NewTab("Movement")
+local movement = movehub:NewSection("")
 movement:NewLabel("Speed")
 movement:NewSlider("Slider", "How fast you move", 100, 18, function(s)
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s

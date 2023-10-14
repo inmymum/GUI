@@ -1,7 +1,6 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/inmymum/RadioSilence/main/Lib/UI/main.lua"))()
 local Window = Library.CreateLib("FuckerGUI", "DarkTheme")
 local player = game.Players.LocalPlayer
-
 function getPlayerNames() -- Get list of players for selection dropdown
     local playerNames = {}
     for _, player in pairs(game.Players:GetPlayers()) do
@@ -9,8 +8,6 @@ function getPlayerNames() -- Get list of players for selection dropdown
     end
     return playerNames
 end
-
-
 local rapetab = Window:NewTab("Rape")
 local rape = rapetab:NewSection("Rape The hoes")
 local dropdown = rape:NewDropdown("Rapist","", getPlayerNames(), function(x)

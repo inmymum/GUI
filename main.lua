@@ -18,7 +18,6 @@ end)
 health:NewButton("Set hp to 10000000", "", function()
     player.Health = 1000000
 end)
-health:UpdateSection("random stuff")
 local rapetab = Window:NewTab("Rape")
 local rape = rapetab:NewSection("Rape The hoes")
 local dropdown = rape:NewDropdown("Rapist","", getPlayerNames(), function(x)

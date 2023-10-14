@@ -47,7 +47,7 @@ end)
 movement:NewButton("Default", "Set jump height to default", function()
     game.Players.LocalPlayer.Character.Humanoid.JumpPower = 18
 end)
-local healthtab = Window:NewTab("Health")
+local healthtab = Window:NewTab("health")
 local health = healthtab:NewSection("random stuff")
 health:NewButton("Forcefield", "", function()
     ff = Instance.new("ForceField", game.Players.LocalPlayer.Character)
@@ -55,3 +55,5 @@ end)
 health:NewButton("Set hp to 10000000", "", function()
     player.Health = 1000000
 end)
+health:UpdateSection("random stuff")
+
